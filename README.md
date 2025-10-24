@@ -1,5 +1,4 @@
 # 🎵 yt-dlp-imgui
-Foobar is a Python library for dealing with word pluralization.
 
 A lightweight desktop YouTube downloader built with **[yt-dlp](https://github.com/yt-dlp/yt-dlp)** and **[Dear PyGui](https://github.com/hoffstadt/dearpygui)**.  
 It lets you download **audio** from YouTube using a clean and simple graphical interface
