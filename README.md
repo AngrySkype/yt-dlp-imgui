@@ -20,7 +20,7 @@ It lets you download **audio** from YouTube using a clean and simple graphical i
 Make sure you have these installed before running the app:
 
 ```
-pip install yt-dlp dearpygui playsound ffmpeg
+pip install yt-dlp dearpygui playsound ffmpeg threading
 ```
 ## License
 
