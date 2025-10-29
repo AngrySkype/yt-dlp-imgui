@@ -8,7 +8,7 @@ SELECTED_CODEC = ""
 SELECTED_QUALITY = ""
 
 URL = ""
-TYPE = ["FFmpegExtractAudio","FFmpegVideoRemuxer"]
+TYPE = ["Audio","Video"]
 CODECAUDIO = ["aac", "alac", "flac", "m4a", "mp3", "opus", "vorbis", "wav"]
 CODECVIDEO = ["mp4", "mov", "m4a", "webm", "mkv", "mka"]
 CODEC_TYPE = [""]
@@ -42,13 +42,13 @@ def combo_callback(sender, app_data, user_data,):
     if user_data == "Type":
         SELECTED_TYPE = app_data
 
-        if app_data == "FFmpegExtractAudio":
+        if app_data == "Audio":
             CODEC_TYPE = CODECAUDIO
             SELECTED_CODEC = CODECAUDIO[0]
             dpg.configure_item("codec_combo", items=CODECAUDIO)
 
 
-        elif app_data == "FFmpegVideoRemuxer":
+        elif app_data == "Video":
             CODEC_TYPE = CODECVIDEO
             SELECTED_CODEC = CODECVIDEO[0]
             dpg.configure_item("codec_combo", items=CODECVIDEO)
@@ -68,7 +68,7 @@ def save_callback():
         show_notification("Error", "Enter a valid URL!")
         return
 
-    if SELECTED_TYPE == "FFmpegExtractAudio":
+    if SELECTED_TYPE == "Audio":
         post = [{
             "key": "FFmpegExtractAudio",
             "preferredcodec": SELECTED_CODEC,
@@ -79,7 +79,7 @@ def save_callback():
             "postprocessors": post,
         }
 
-    elif SELECTED_TYPE == "FFmpegVideoRemuxer":
+    elif SELECTED_TYPE == "Video":
         yt_opts = {
             "format": "bestvideo+bestaudio/best",
             "merge_output_format": SELECTED_CODEC,
