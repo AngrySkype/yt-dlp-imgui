@@ -3,9 +3,6 @@ import dearpygui.dearpygui as dpg
 import threading
 import yt_dlp
 
-# TODO: Add options for sound
-# TODO: Theme loader
-
 SELECTED_TYPE = ""
 SELECTED_CODEC = ""
 SELECTED_QUALITY = ""
