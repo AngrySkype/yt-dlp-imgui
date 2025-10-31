@@ -1,6 +1,6 @@
 # 🎵 yt-dlp-imgui
 
-A lightweight desktop YouTube downloader built with **[yt-dlp](https://github.com/yt-dlp/yt-dlp)** and **[Dear PyGui](https://github.com/hoffstadt/dearpygui)**.  
+A lightweight desktop video and audio downloader built with **[yt-dlp](https://github.com/yt-dlp/yt-dlp)** and **[Dear PyGui](https://github.com/hoffstadt/dearpygui)**.  
 It lets you download **audio** and **video** from YouTube using a clean and simple graphical interface
 
 ---
