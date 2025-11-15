@@ -78,7 +78,7 @@ def save_callback():
     with yt_dlp.YoutubeDL(yt_opts) as ydl:
         error_code = ydl.download([URL])
         print(error_code)
-        show_notification("Done", "Download completed successfully!", x= 200, y= 50)
+        show_notification("Done", "Download completed successfully!", x= 250, y= 50)
         play_sound_async("sounds/finish.mp3")
 
 def string_callback(sender, data):
